@@ -11,25 +11,29 @@
 </head>
 <body>
 
-<section data-role="page" id="home">
-    <header data-role="header" data-position="fixed" data-theme="a">
+<section data-role="page" id="home" data-theme="b">
+    <header data-role="header" data-position="fixed" >
         <h2>App</h2>
     </header>
-    <!-- Aquí irá la imagen:-->
+
     <article>
         <div id="main_image">
-            <h1 class="center">Aquí va la imagen Principal</h1>
+            <!--<h1 class="center">Aquí va la imagen Principal</h1>-->
+            <br/>
+            <img class="center-block" src="img/restaurant.jpg" alt="Papas & Beer"/>
         </div>
     </article>
 
-    <br/><br/><br/><br/>
     <br/><br/>
 
     <div data-role="content">
-        <a data-icon="info" data-role="button" data-transition="pop" href="#about">Sobre nosotros</a>
-        <a data-icon="bars" data-role="button" data-transition="fade" href="#">Menú</a>
-        <a data-icon="star" data-role="button" data-transition="flip" href="#">Reservaciones</a>
-        <a data-icon="calendar" data-role="button" data-transition="flow" href="#">Eventos</a>
+        <ul data-role="listview">
+            <li><a data-icon="info" data-role="button" data-transition="pop" href="#about">Sobre nosotros</a></li>
+            <li><a data-icon="bars" data-role="button" data-transition="fade" href="#">Menú</a></li>
+            <li><a data-icon="star" data-role="button" data-transition="flip" href="#">Reservaciones</a></li>
+            <li><a data-icon="calendar" data-role="button" data-transition="flow" href="#">Eventos</a></li>
+        </ul>
+
     </div>
     <footer data-role="footer" data-position="fixed">
         <a class="pull-right" data-icon="home" data-role="button" data-transition="pop" href="#">Inicio</a>
@@ -37,32 +41,24 @@
 </section>
 
 <!--Pagina2 Interna-->
-<section data-role="page" id="about">
+<section data-role="page" id="about" data-theme="b" data-content-theme="b">
     <header>
-        <p>
-
-        <h3>Sobre Nosotros</h3>
+        <h3 class="center">¿Quiénes somos?</h3>
         <article>
-            <h1 class="center">Aquí va la imagen principal</h1>
+            <img class="center-block" src="img/about.png" alt="Sobre Nosotros"/>
         </article>
     </header>
     <div data-role="content">
-        <h3 class="center">¿Quiénes somos?</h3>
 
         <p>
-            sdnsoidnsiuvnifn
-            sdnsoidnsiuvnifn
-            sdnsoidnsiuvnifn
-            sdnsoidnsiuvnifn
-
+            Somos Estudiantes de la Facultad de Matemáticas, que se encuentran
+            realizando la tarea de la materia "Desarrollo de Aplicaciones Móviles Multiplataforma".
         </p>
     </div>
-
     <footer data-role="footer" data-position="fixed">
         <a class="pull-right" data-icon="home" data-role="button" data-transition="flip" href="#home">Inicio</a>
     </footer>
 </section>
-
 
 </body>
 </html>
