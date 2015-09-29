@@ -12,14 +12,14 @@
 <body>
 
 <section data-role="page" id="home" data-theme="b">
-    <header data-role="header" data-position="fixed" >
+    <header data-role="header" data-position="fixed">
         <h2>App</h2>
     </header>
 
+    <br/>
+
     <article>
         <div id="main_image">
-            <!--<h1 class="center">Aquí va la imagen Principal</h1>-->
-            <br/>
             <img class="center-block" src="img/restaurant.jpg" alt="Papas & Beer"/>
         </div>
     </article>
@@ -31,7 +31,7 @@
             <li><a data-icon="info" data-role="button" data-transition="pop" href="#about">Sobre nosotros</a></li>
             <li><a data-icon="bars" data-role="button" data-transition="fade" href="#">Menú</a></li>
             <li><a data-icon="star" data-role="button" data-transition="flip" href="#">Reservaciones</a></li>
-            <li><a data-icon="calendar" data-role="button" data-transition="flow" href="#">Eventos</a></li>
+            <li><a data-icon="calendar" data-role="button" data-transition="flow" href="events.html">Eventos</a></li>
         </ul>
 
     </div>
@@ -56,7 +56,34 @@
         </p>
     </div>
     <footer data-role="footer" data-position="fixed">
-        <a class="pull-right" data-icon="home" data-role="button" data-transition="flip" href="#home">Inicio</a>
+
+        <table data-role="table" id="authors-table" data-mode="reflow" class="ui-responsive">
+            <thead>
+            <tr>
+                <th data-priority="1"></th>
+                <th data-priority="2"></th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>
+                    <details>
+                        <summary>Autores</summary>
+                        <p> - Eduardo Canché.</p>
+                        <p> - Alejandro Sumárraga.</p>
+                    </details>
+                </td>
+
+                <td>
+                    <a data-icon="home" data-role="button" data-transition="flip"
+                       href="#home">Inicio</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+
     </footer>
 </section>
 
