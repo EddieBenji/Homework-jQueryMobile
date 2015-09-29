@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <section data-role="page" id="reservaciones" data-theme="b">
+            <form>
+
+                <label for="nombre">Nombre:* </label>
+                <input name="nombre" id="nombre" type="text" placeholder="nombre"/>
+                <label for="apellido">Apellido:* </label>
+                <input name="apellido" id="nombre" type="text" placeholder="apellido"/>
+                <label for="email">Email:* </label>
+                <input name="email" id="email" type="email" placeholder="email"/>
+                <label for="fecha">Fecha:* </label>
+                <input name="fecha" id="fecha" type="date"/>
+                <label for="hora">Hora:* </label>
+                <input name="hora" id="hora" type="time"/>
+                <a href="#rsvp" data-rel="popup" data-role="button" data-position-to="window" data-transition="pop">Reservar</a>
+
+                <div data-role="popup" id="rsvp">
+                    <h3>Gracias por Reservar</h3>
+
+                    <a href="index.html" data-role="button" data-icon="check" data-mini="true" data-iconpos="right">Aceptar</a>
+
+                </div>
+            </form>
+            <footer data-role="footer" data-position="fixed">
+                <a class="pull-right" data-icon="home" data-role="button" data-transition="flip" href="index.html">Inicio</a>
+            </footer>
+        </section>
+
+    </body>
+</html>
