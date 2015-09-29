@@ -1,19 +1,68 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mini-Página</title>
-        <script src="js/jquery-2.1.4.min.js"></script>
-        <script src="js/jquery.mobile-1.4.5.min.js"></script>
-        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Página</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<section data-role="page" id="home">
+    <header data-role="header" data-position="fixed" data-theme="a">
+        <h2>App</h2>
+    </header>
+    <!-- Aquí irá la imagen:-->
+    <article>
+        <div id="main_image">
+            <h1 class="center">Aquí va la imagen Principal</h1>
+        </div>
+    </article>
+
+    <br/><br/><br/><br/>
+    <br/><br/>
+
+    <div data-role="content">
+        <a data-icon="info" data-role="button" data-transition="pop" href="#about">Sobre nosotros</a>
+        <a data-icon="bars" data-role="button" data-transition="fade" href="#">Menú</a>
+        <a data-icon="star" data-role="button" data-transition="flip" href="#">Reservaciones</a>
+        <a data-icon="calendar" data-role="button" data-transition="flow" href="#">Eventos</a>
+    </div>
+    <footer data-role="footer" data-position="fixed">
+        <a class="pull-right" data-icon="home" data-role="button" data-transition="pop" href="#">Inicio</a>
+    </footer>
+</section>
+
+<!--Pagina2 Interna-->
+<section data-role="page" id="about">
+    <header>
+        <p>
+
+        <h3>Sobre Nosotros</h3>
+        <article>
+            <h1 class="center">Aquí va la imagen principal</h1>
+        </article>
+    </header>
+    <div data-role="content">
+        <h3 class="center">¿Quiénes somos?</h3>
+
+        <p>
+            sdnsoidnsiuvnifn
+            sdnsoidnsiuvnifn
+            sdnsoidnsiuvnifn
+            sdnsoidnsiuvnifn
+
+        </p>
+    </div>
+
+    <footer data-role="footer" data-position="fixed">
+        <a class="pull-right" data-icon="home" data-role="button" data-transition="flip" href="#home">Inicio</a>
+    </footer>
+</section>
+
+
+</body>
 </html>
