@@ -10,3 +10,4 @@ nb-configuration.xml
 .nb-gradle/
 
 .idea
+.idea/
