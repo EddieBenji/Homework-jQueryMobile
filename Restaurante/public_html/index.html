@@ -34,7 +34,8 @@
         <ul data-role="listview">
             <li><a data-icon="info" data-role="button" data-transition="pop" href="#about">Sobre nosotros</a></li>
             <li><a data-icon="bars" data-role="button" data-transition="flow" href="menu.html">Menú</a></li>
-            <li><a data-icon="star" data-role="button" data-transition="flow" href="reservaciones.html">Reservaciones</a></li>
+            <li><a data-icon="star" data-role="button" data-transition="flow"
+                   href="reservaciones.html">Reservaciones</a></li>
             <li><a data-icon="calendar" data-role="button" data-transition="flow" href="events.html">Eventos</a></li>
         </ul>
 
@@ -60,32 +61,18 @@
         </p>
     </div>
     <footer data-role="footer" data-position="fixed">
+        <details>
+            <summary class="pull-left">Autores</summary>
+            <p> - Eduardo Canché.</p>
 
-        <table data-role="table" id="authors-table" data-mode="reflow" class="ui-responsive">
-            <thead>
-            <tr>
-                <th data-priority="1"></th>
-                <th data-priority="2"></th>
-            </tr>
-            </thead>
+            <p> - Alejandro Sumárraga.</p>
+        </details>
 
-            <tbody>
-            <tr>
-                <td>
-                    <details>
-                        <summary>Autores</summary>
-                        <p> - Eduardo Canché.</p>
-                        <p> - Alejandro Sumárraga.</p>
-                    </details>
-                </td>
 
-                <td>
-                    <a data-icon="home" data-role="button" data-transition="flip"
-                       href="#home">Inicio</a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <a data-icon="home" data-role="button" data-transition="flip" class="pull-right"
+           href="#home">Inicio</a>
+
+
 
 
     </footer>
