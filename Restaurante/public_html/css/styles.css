@@ -21,3 +21,13 @@
         min-height: 0 !important;
     }
 }
+
+form label.error, form input.submit {
+    margin-left: 253px;
+}
+
+form label.error {
+    margin-left: 10px;
+    width: auto;
+    display: inline;
+}
