@@ -6,6 +6,7 @@
 $.validator.setDefaults({
     submitHandler: function () {
         alert("Datos Enviados!");
+        window.location.href="index.html";
     }
 });
 
