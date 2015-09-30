@@ -6,9 +6,9 @@
 $.validator.setDefaults({
     submitHandler: function () {
         alert("Datos Enviados!");
-        window.location.href="index.html";
     }
 });
+
 $(document).on('pageinit', function () { // <-- you must use this to ensure the DOM is ready
 
     $("#reservaciones").find("form").validate({
